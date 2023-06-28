@@ -18,5 +18,5 @@ naoButton.addEventListener('mouseenter', function() {
 var simButton = document.getElementById('sim-button');
 simButton.addEventListener('click', function() {
     var container = document.getElementById('container');
-    container.innerHTML = '<h2>Obrigado por aceitar! Agora vai ter que dar o cuzinho!</h2>';
+    container.innerHTML = '<h2>Obrigado por aceitar!</h2>';
 });
