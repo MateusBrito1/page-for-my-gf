@@ -1,11 +1,11 @@
-var naoButton = document.getElementById('nao-button');
+let naoButton = document.getElementById('nao-button');
 naoButton.addEventListener('mouseover', moveNaoButton);
 
 function moveNaoButton() {
-    var maxWidth = window.innerWidth - naoButton.clientWidth;
-    var maxHeight = window.innerHeight - naoButton.clientHeight;
-    var randomX = Math.floor(Math.random() * maxWidth);
-    var randomY = Math.floor(Math.random() * maxHeight);
+    let maxWidth = window.innerWidth - naoButton.clientWidth;
+    let maxHeight = window.innerHeight - naoButton.clientHeight;
+    let randomX = Math.floor(Math.random() * maxWidth);
+    let randomY = Math.floor(Math.random() * maxHeight);
     naoButton.style.position = 'absolute';
     naoButton.style.left = randomX + 'px';
     naoButton.style.top = randomY + 'px';
@@ -15,8 +15,14 @@ naoButton.addEventListener('mouseenter', function() {
     moveNaoButton();
 });
 
-var simButton = document.getElementById('sim-button');
+let simButton = document.getElementById('sim-button');
 simButton.addEventListener('click', function() {
-    var container = document.getElementById('container');
-    container.innerHTML = '<h2>Obrigado por aceitar!</h2>';
+    let container = document.getElementById('container');
+    container.innerHTML = '<h2>Quero viver pra sempre com você, você é o meu maior bem, te amo muito vitorinha!</h2>';
+
+
+    let myGif = document.createElement("img");
+    myGif.src = "https://i.pinimg.com/originals/88/27/4b/88274b5f2aef162185bed9f359ece0cd.gif";
+    myGif.style.width = '150px';
+    container.appendChild(myGif);
 });
