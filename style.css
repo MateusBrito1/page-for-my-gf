@@ -1,4 +1,4 @@
-#sim-button {
+#yes-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: rgb(35, 138, 52);
@@ -23,11 +23,11 @@ body {
 }
 
 
-#sim-button:hover {
+#yes-button:hover {
     background-color: rgb(7, 7, 7);
 }
 
-#nao-button {
+#no-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: red;
@@ -37,7 +37,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-#nao-button:hover {
+#no-button:hover {
     transform: rotate(360deg);
 }
 
